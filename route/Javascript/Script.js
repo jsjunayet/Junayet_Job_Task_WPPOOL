@@ -167,7 +167,6 @@ function createStoriesCards() {
                <p class="text-[#2042B6] text-[14px] ${item.Name === 'By: Nayem Khan' ? 'mt-[90px]' : 'mt-16'}">${item.Name}</p>
                 <p class=" text-[#191618]">${item.des}</p>
                     <button class="rounded-2xl mt-3 bg-[#2042B6] text-[#fff] py-[6px] px-3">Read More</button>
-
                 </div>
             </div>
         `;
