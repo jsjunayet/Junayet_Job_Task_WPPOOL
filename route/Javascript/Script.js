@@ -126,6 +126,76 @@ const Companies = [
         "des":"Key Takeaways from Robotics Invest 2023."
     },
 ]
+let companiesData = [
+    {
+        Company: "Company A",
+        Ticker: "TickerA",
+        Vertical: "Technology",
+        Price: 100.25,
+        Market: 250,
+        Revenue: 0.15,
+        Gross: 0.6,
+        Revenues: 5.2,
+        YTD: 0.05
+    },
+    {
+        Company: "Company A",
+        Ticker: "TickerA",
+        Vertical: "Technology",
+        Price: 100.25,
+        Market: 250,
+        Revenue: 0.15,
+        Gross: 0.6,
+        Revenues: 5.2,
+        YTD: 0.05
+    },
+    {
+        Company: "Company A",
+        Ticker: "TickerA",
+        Vertical: "Technology",
+        Price: 100.25,
+        Market: 250,
+        Revenue: 0.15,
+        Gross: 0.6,
+        Revenues: 5.2,
+        YTD: 0.05
+    },
+    {
+        Company: "Company A",
+        Ticker: "TickerA",
+        Vertical: "Technology",
+        Price: 100.25,
+        Market: 250,
+        Revenue: 0.15,
+        Gross: 0.6,
+        Revenues: 5.2,
+        YTD: 0.05
+    },
+    {
+        Company: "Company A",
+        Ticker: "TickerA",
+        Vertical: "Technology",
+        Price: 100.25,
+        Market: 250,
+        Revenue: 0.15,
+        Gross: 0.6,
+        Revenues: 5.2,
+        YTD: 0.05
+    },
+    {
+        Company: "Company A",
+        Ticker: "TickerA",
+        Vertical: "Technology",
+        Price: 100.25,
+        Market: 250,
+        Revenue: 0.15,
+        Gross: 0.6,
+        Revenues: 5.2,
+        YTD: 0.05
+    }
+  
+];
+
 
 // Function to create image cards
 function createImageCards() {
@@ -174,6 +244,31 @@ function createStoriesCards() {
 
     storiesContainer.innerHTML = html;
 }
+function renderCandidateTable() {
+    const candidateTableBody = document.getElementById('candidateTableBody');
+    let html = '';
+
+    companiesData.forEach((item, index) => {
+        html += `
+            <tr class="${index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}">
+                <td class="px-5 py-3">${item.Company}</td>
+                <td class="">${item.Ticker}</td>
+                <td class="">${item.Vertical}</td>
+                <td class="">${item.Price}</td>
+                <td class="">${item.Market}</td>
+                <td class="">${item.Revenue}</td>
+                <td class="">${item.Gross}</td>
+                <td class="">${item.Revenues}</td>
+                <td class="">${item.YTD}</td>
+            </tr>
+        `;
+    });
+
+    candidateTableBody.innerHTML = html;
+}
+
+
+
 
 
 
@@ -181,3 +276,4 @@ function createStoriesCards() {
 window.onload = createImageCards;
 window.onload = createStoriesCards;
 window.onload = createPortfoiloCards;
+window.onload = renderCandidateTable;

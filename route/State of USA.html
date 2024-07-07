@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Multiple Images Swiper Example</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Your custom styles -->
+    <style>
+        /* Customize as needed */
+        .swiper-container {
+            width: 100%; /* Adjust container width as needed */
+            margin: auto; 
+            padding: 20px;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #f8f8f8;
+            /* Additional styles */
+            padding: 50px; /* Add padding to slides */
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 20%;
+            width: auto;
+            padding: 10px;
+            margin-top: 30px; /* Adjust vertical alignment */
+            color: white;
+            font-size: 18px;
+            z-index: 10;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            display: flex;
+            
+        }
+        .swiper-button-prev {
+            left: 10px;
+        }
+        .swiper-button-next {
+            right: 10px;
+        }
+    </style>
 </head>
 <body>
-    State of USA
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <!-- Add more slides as needed -->
+    </div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        slidesPerView: 3, // Number of slides visible at a time
+        spaceBetween: 30, // Space between slides
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
 </body>
 </html>

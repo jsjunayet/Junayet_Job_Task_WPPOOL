@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
-    hello All Companies
+<body class=" max-w-7xl mx-auto">
+    <div class="overflow-x-auto">
+        <table class="table-auto min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <thead class="">
+                <tr class="text-left font-bold md:text-[14px] text-[12px]">
+                    <th class="px-5 py-3" style="width: 13%;">Company</th>
+                    <th class="" style="width: 8%;">Ticker</th>
+                    <th class="" style="width: 13%;">Vertical</th>
+                    <th class="" style="width: 8%;">Price</th>
+                    <th class="" style="width: 12%;">Market Cap ($B)</th>
+                    <th class="" style="width: 12%;">Revenue Growth</th>
+                    <th class="" style="width: 12%;">Gross Margin</th>
+                    <th class="" style="width: 10%;">EV/Revenue</th>
+                    <th class="" style="width: 13%;">YTD Performance</th>
+                </tr>
+            </thead>
+            <tbody id="candidateTableBody" class="text-gray-600">
+                <!-- Table data will be inserted dynamically here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./Javascript/Script.js"></script>
 </body>
 </html>
