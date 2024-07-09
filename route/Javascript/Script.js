@@ -267,11 +267,6 @@ function renderCandidateTable() {
     candidateTableBody.innerHTML = html;
 }
 
-
-
-
-
-
 // Call function to create image cards when page loads
 window.onload = createImageCards;
 window.onload = createStoriesCards;
