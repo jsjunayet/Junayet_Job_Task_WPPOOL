@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nantes&display=swap');
+@font-face {
+  font-family: 'Nantes';
+  src: url('/path/to/nantes.woff2') format('woff2'),
+       url('/path/to/nantes.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.confirmation-box {
+    display: none;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 27px;
+    right: 25px;
+    width: 338px;
+    height: 500px;
+    border-radius: 10px;
+    z-index:4;
+}
+.confirmation-box-content {
+    padding: 25px;
+    margin-left: 15px;
+   
+}
+
+
+.card {
+width: 100%;
+position: relative;
+}
+
+
+.card-content {
+position: relative;
+z-index: 3;
+width: 100%
+}
+
+
+.bg-ground{
+background-image: url('./img/js.png');
+background-repeat: no-repeat;
+background-position: top;
+background-size: contain;
+}
+.testimonials-section{
+width: 100%;
+padding-left: 10px;
+}
+.testimonials-section .section-header{
+max-width: 700px;
+text-align: center;
+margin: 30px auto 40px;
+}
+.testimonials-container{
+position: relative;
+}
+.testimonials-container .testimonial-card{
+padding: 20px;
+}
+.testimonial-card .test-card-body{
+background-color: var(--card-clr);
+box-shadow: 2px 2px 20px rgba(0,0,0,0.12);
+padding: 20px;
+}
+
+
+.owl-nav {
+position: absolute;
+left:45px;
+bottom: 0px;
+transform: translateY(-50%);
+}
+.owl-nav button{
+border-radius: 50% !important;
+background-color: #FFFFFF !important;
+}
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i{
+padding: 10px !important;
+border-radius: 50%;
+font-size: 18px !important;
+background-color: var(--card-clr) !important;
+color: var(--primary-clr);
+cursor: pointer;
+transition: 0.4s;
+
+
+}
+
+.owl-dots {
+display: none; /* Hide the dots */
+}
+.owl-dots .owl-dot span{
+background-color: #434753 !important;
+padding: 6px !important;
+}
+.owl-dot.active span{
+background-color: var(--primary-clr) !important;
+}
